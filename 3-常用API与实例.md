@@ -36,7 +36,7 @@ guid代码 生成
 
 在上一节课代码的基础上：
 
-componentWillMount() {
+'componentWillMount() {
     if (Platform.OS === 'android') {
       BackAndroid.addEventListener('hardwareBackPress', this.onBackAndroid);
     }
@@ -56,8 +56,7 @@ componentWillMount() {
             return true;//接管默认行为
         }
         return false;//默认行为
-
-    };
+    };`
 
 说明：BackAndroid在iOS平台下是一个空实现，所以理论上不做这个Platform.OS === 'android'判断也是安全的。
 如果所有事件监听函数中，没有任何一个返回真值，就会默认调用默认行为
