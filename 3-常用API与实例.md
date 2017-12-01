@@ -1,11 +1,11 @@
-#36、API学习AppRegistry
+# 36、API学习AppRegistry
 
 只有配合使用React Native的常用组件和常用API，才能更好的开发应用程序
 
 AppRegistry是JS运行所有React Native应用的入口。应用的根组件应当通过AppRegistry.registerComponent方法注册自己，当注册完后，原生系统才可以加载应用的bundle包并且触发AppRegistry.runApplication来真正运行应用。
 
 
-#37、API学习AsyncStorage
+# 37、API学习AsyncStorage
 
 AsyncStorage是一个简单的、具有异步特性的键值对的存储系统，全局的！替代LocalStorage
 
@@ -32,7 +32,7 @@ guid代码 生成
 推荐由React Native中文网封装维护的react-native-storage模块，提供了较多便利功能。
 
 
-#38、物理back键详解
+# 38、物理back键详解
 
 在上一节课代码的基础上：
 
@@ -181,7 +181,7 @@ class PauseMenu extends React.Component{
   };
 
 
-#39、复杂的组件通讯三种方案
+# 39、复杂的组件通讯三种方案
 接着上节课的代码，从一个bug入手，透过问题去学习，大大提升学习效率
 解决bug：组件pop之后，之前的组件没有更新？
 例子：在购物车里清空了，但是pop之后，商品详情页并没有更新？
@@ -295,7 +295,7 @@ RN官方并不提供这个方案，redux也不是官方的
 
 
 
-#40、安装Nuclide与API学习AlertIOS
+# 40、安装Nuclide与API学习AlertIOS
 
 安装mac下React Native的开发工具Nuclide
 
@@ -326,7 +326,7 @@ prompt(title,message,[] buttons) 提供输入的对话框
 如果buttons为空数组，默认也会有一个ok按钮，如果数据的长度过长，按钮就会垂直排列！
 
 
-#41、API学习DatePickerAndroid与TimePickerAndroid
+# 41、API学习DatePickerAndroid与TimePickerAndroid
 
 日期、时间选择器  Android中是以api的形式，IOS是以组件的形式
 
@@ -361,7 +361,7 @@ is24Hour (boolean) - 如果设为true，则选择器会使用24小时制。如�
 注意：is24Hour在某些手机上不会产生作用，用户没有选择时间是因为按下了返回键或取消键；同样的api中的Open打开的是系统的界面
 
 
-#42、IOS日期时间组件DatePickerIOS
+# 42、IOS日期时间组件DatePickerIOS
  
 nuclide代码自动补全提示的插件：
 atom-react-native-css atom-react-native-autocomplete
@@ -408,7 +408,7 @@ http://stackoverflow.com/questions/35764088/prop-issues-with-datepickerios-in-re
 
 
 
-#43、API学习ActionSheetIOS
+# 43、API学习ActionSheetIOS
 
 需求：分享和弹出多项选择操作！在IOS开发中，ActionSheet提供了这样的功能，而React Native同样封装了该功能，那就是ActionSheetIOS
 
@@ -440,7 +440,7 @@ url（字符串） - 要分享的URL地址
 
 
 
-#44、API学习-网络状态与数据交互
+# 44、API学习-网络状态与数据交互
 
 ##先来看看Android原生的：
 （安装最新版的AS）
@@ -518,7 +518,7 @@ Android独有的特色：
 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-##数据交互（网络请求与响应）
+## 数据交互（网络请求与响应）
 
 抓包工具：httpwatch  下载地址：https://yunpan.cn/cRpfdwiYvu2jR  访问密码 f018
 
@@ -580,7 +580,7 @@ let request=new XMLHttpRequest();
     request.send();
 
 
-#45、API学习CameraRoll
+# 45、API学习CameraRoll
 
 CameraRoll模块提供了对手机中保存的图片、视频文件进行遍历访问与操作。
 提供两个静态方法
@@ -624,7 +624,7 @@ CameralRoll在IOS平台中需要添加链接库才能运行，否则报错找不
 4.使用Xcode重新运行项目
 
 
-##static saveImageWithTag(tag) 保存一个图片到相册
+## static saveImageWithTag(tag) 保存一个图片到相册
 
  tag 在安卓上，本参数是一个本地URI（是把本地的图片保存到相册中），例如"file:///sdcard/img.png".
 
@@ -636,7 +636,7 @@ CameralRoll在IOS平台中需要添加链接库才能运行，否则报错找不
 
 
 
-#46、开源组件react-native-camera
+# 46、开源组件react-native-camera
 
 推荐一个跨平台的rn-camera-roll：https://www.npmjs.com/package/rn-camera-roll
 
@@ -659,7 +659,7 @@ ref的两种属性：String属性 回调属性（组件render渲染完成后的�
 this callback will be executed immediately after the component is mounted（组件render之后DidMount之前）
 
 
-#47、API学习定时器与手机定位Geolocation
+# 47、API学习定时器与手机定位Geolocation
 
 定时器API：setTimeout、setInterval、setImmediate、requestAnimationFrame 跟浏览器中的一致
 
@@ -701,7 +701,7 @@ IOS需要在Info.plist中增加NSLocationWhenInUseUsageDescription字段来启�
 综合案例：TimerDemo
 
 
-#48、API学习PanResponder手势识别
+# 48、API学习PanResponder手势识别
 
 这节课是PanResponder手势识别初探，高级部分放到vip专属课程里
 
@@ -759,7 +759,7 @@ vy - 当前的纵向移动速度
 
 numberActiveTouches - 当前在屏幕上的有效触摸点的数量
 
-#49、运行官方项目UIExplorer(Android&IOS)
+# 49、运行官方项目UIExplorer(Android&IOS)
 
 马上就要进入vip专属课程了，我们用一个项目将之前讲的知识点串起来，适配Android与IOS！
 
@@ -821,7 +821,7 @@ IOS环境跑UIExplorer：
 npm install lodash  直接npm install 直到successful
 
 
-#50、混合原生开发_RN调用原生方法的步骤
+# 50、混合原生开发_RN调用原生方法的步骤
 
 RN调用原生的方法，此讲适配Android原生与RN的混合开发，步骤如下：
 
@@ -855,15 +855,13 @@ Linking提供了一个通用的接口来与传入和传出的App链接进行交�
 
 3.openURL(url) 尝试使用设备上已经安装的应用打开指定的url 
 
-  http网址：http://www.reactnative.vip
-
   https网址：https://www.baidu.com
 
-  发短信：smsto:13667377378
+  发短信：smsto:xxxxxxxxxxx
 
-打电话：tel:13667377378
+打电话：tel:xxxxxxxxxxx
 
-发邮件：mailto:309623978@qq.com
+发邮件：mailto:xxxxxxxx@qq.com
 
 发位置：geo:37.484847,-122.148386 这个不一定看地图处理应用而定
 
@@ -894,4 +892,3 @@ Linking提供了一个通用的接口来与传入和传出的App链接进行交�
 IOS
 
 首先我们需要在AppDelegate.m文件中引入RCTLinkingManager.h头文件，那么就需要我们引入相关配置了，关于库的引入默认项目都默认已经配置好的，但是我们需要配置一个库头文件搜索路径
-
